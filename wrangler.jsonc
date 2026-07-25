@@ -1,0 +1,13 @@
+{
+  "name": "islam-buffer-agent", // تقدر تغير الاسم زي ما تحب
+  "main": "mcp-buffer-v1.8.js",
+  "compatibility_date": "2024-10-22",
+  "compatibility_flags": ["nodejs_compat"],
+  "workflows": [
+    {
+      "name": "agent-workflow", // اسم الـ workflow في حسابك
+      "binding": "AGENT_WORKFLOW", // ده الاسم اللي الكود بيقرا منه
+      "class_name": "AgentStepWorkflow" // ده اسم الكلاس اللي في آخر ملف الكود
+    }
+  ]
+}
