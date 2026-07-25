@@ -6,7 +6,7 @@ import { WorkflowEntrypoint } from "cloudflare:workers";
 const MCP_URL = "https://mcp.buffer.com/mcp";
 const MCP_PROTOCOL_VERSION = "2025-06-18";
 
-const GEMINI_MODEL = "gemini-3.5-flash";
+const GEMINI_MODEL = "gemini-3.5-flash-lite";
 const GEMINI_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/" +
   GEMINI_MODEL +
