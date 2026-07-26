@@ -1,6 +1,6 @@
 {
   "$schema": "./node_modules/wrangler/config-schema.json",
-  "name": "islam-agent",
+  "name": "buffer-47",
 
   // لازم يطابق اسم الملف اللي هترفعه (لو غيرت الاسم، عدّل هنا كمان)
   "main": "mcp-buffer-v1.9.js",
