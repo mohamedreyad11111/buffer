@@ -1,13 +1,20 @@
 {
-  "name": "islam-buffer-agent", // تقدر تغير الاسم زي ما تحب
-  "main": "mcp-buffer-v1.8.js",
-  "compatibility_date": "2024-10-22",
-  "compatibility_flags": ["nodejs_compat"],
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "islam-agent",
+
+  // لازم يطابق اسم الملف اللي هترفعه (لو غيرت الاسم، عدّل هنا كمان)
+  "main": "mcp-buffer-v1.9.js",
+
+  "compatibility_date": "2026-07-24",
+
+  // ربط الـ Worker بالـ Workflow المعرّف جوه نفس الملف (class AgentTurnWorkflow)
+  // ملاحظة: اسم الكلاس اتغيّر من AgentStepWorkflow (v1.8) لـ AgentTurnWorkflow (v1.9)
+  // — لازم class_name هنا يطابقه بالظبط.
   "workflows": [
     {
-      "name": "agent-workflow", // اسم الـ workflow في حسابك
-      "binding": "AGENT_WORKFLOW", // ده الاسم اللي الكود بيقرا منه
-      "class_name": "AgentStepWorkflow" // ده اسم الكلاس اللي في آخر ملف الكود
+      "name": "agent-turn-workflow",
+      "binding": "AGENT_WORKFLOW",
+      "class_name": "AgentTurnWorkflow"
     }
   ]
 }
